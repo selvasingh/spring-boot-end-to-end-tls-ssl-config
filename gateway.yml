@@ -5,11 +5,11 @@ spring:
         ssl:
           useInsecureTrustManager: true
       routes:
-        - id: greeting
-          uri: https://${GREETING_SERVICE}/
-          predicates:
-            - Path=/greeting/**
         - id: greeting-external
           uri: https://${GREETING_EXTERNAL_SERVICE}/
           predicates:
             - Path=/greeting-external/**
+        - id: greeting
+          uri: https://${GREETING_SERVICE}/
+          predicates:
+            - Path=/greeting/**
