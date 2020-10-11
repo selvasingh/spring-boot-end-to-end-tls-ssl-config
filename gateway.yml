@@ -9,7 +9,7 @@ spring:
           uri: https://${GREETING_SERVICE}/
           predicates:
             - Path=/greeting/**
-        - id: netty
+        - id: greeting-external
           uri: https://${GREETING_EXTERNAL_SERVICE}/
           predicates:
             - Path=/greeting-external/**
