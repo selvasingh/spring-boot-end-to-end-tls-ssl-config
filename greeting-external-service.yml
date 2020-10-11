@@ -6,8 +6,7 @@ application:
         port: ${EXTERNAL_SERVICE_PORT}
 
 server:
-  servlet:
-    context-path: /greeting-external
+  context-path=/greeting-external
 
 feign:
   hystrix:
