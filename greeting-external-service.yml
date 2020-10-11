@@ -1,0 +1,14 @@
+application:
+    message: Hello, %s! - Configured by Spring Cloud Config Server%n
+    external:
+      service:
+        endpoint: ${EXTERNAL_SERVICE_ENDPOINT}
+        port: ${EXTERNAL_SERVICE_PORT}
+
+server:
+  servlet:
+    context-path: /greeting-external
+
+feign:
+  hystrix:
+    enabled: true
