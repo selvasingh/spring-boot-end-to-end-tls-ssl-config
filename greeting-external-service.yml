@@ -1,5 +1,5 @@
 application:
-    message: Hello, %s! - Configured by Spring Cloud Config Server%n
+    message: Hello, %s! --- Configured by Spring Cloud Config Server
     external:
       service:
         endpoint: ${EXTERNAL_SERVICE_ENDPOINT}
