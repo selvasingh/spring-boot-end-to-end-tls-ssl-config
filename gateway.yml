@@ -3,10 +3,10 @@ spring:
     gateway:
       routes:
         - id: greeting-external
-          uri: https://${GREETING_EXTERNAL_SERVICE}/
+          uri: lb://greeting-external-service/
           predicates:
             - Path=/greeting-external/**
         - id: greeting
-          uri: https://${GREETING_SERVICE}/
+          uri: lb://greeting-service/
           predicates:
             - Path=/greeting/**
