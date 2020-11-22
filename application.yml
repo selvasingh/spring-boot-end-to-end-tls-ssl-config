@@ -17,3 +17,8 @@ management:
         include: "*"
     shutdown:
       enabled: true
+
+eureka:
+  instance:
+    nonSecurePortEnabled: false
+    securePortEnables: true
