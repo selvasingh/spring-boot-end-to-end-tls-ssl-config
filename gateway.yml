@@ -10,3 +10,10 @@ spring:
           uri: lb://greeting-service/
           predicates:
             - Path=/greeting/**
+      httpserver:
+        wiretap: true
+      httpclient:
+        wiretap: true
+
+reactor:
+  netty: INFO
