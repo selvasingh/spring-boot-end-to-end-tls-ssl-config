@@ -21,7 +21,7 @@ management:
 eureka:
   instance:
     nonSecurePortEnabled: false
-    securePortEnables: true
+    securePortEnabled: true
 
 logging:
   level:
