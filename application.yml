@@ -18,3 +18,15 @@ spring:
 logging:
   level:
     root: INFO
+    
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: "/dev"
+      prefix: stdout
+      buffered: false
+      suffix:
+      file-date-format:
+      request-attributes-enabled: true
+      pattern: "[ACCESS] %h %l %u %t %r %s %b"
